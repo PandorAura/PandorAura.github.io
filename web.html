@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>
+        Adopt a cat!
+    </title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,500,100' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="./web.css" />
+    <link rel="stylesheet" href="./navBar.css" />
+</head>
+
+<body>
+    <header>
+        <nav class="navigation">
+            <ul>
+                <li><a class="active">Welcome !</a></li>
+                <li><a href="about-info.html">About</a></li>
+                <li><a href="adoption.html">Adopt</a></li>
+                <li><a href="cat-care.html">Care</a></li>
+                <li><a href="about-cats.html">Cats</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+
+        <div class="main">
+            <div id="showcase" class="grid">
+                <img class="bg-image" src="./download (3).jpg" />
+                <div class="content-wrap">
+                    <h1 id="home">Green Cats</h1>
+                    <p>
+                        Trying to change the world cat by cat !
+                    </p>
+                </div>
+            </div>
+
+            <h3>Why You Should Choose Us ?</h3>
+            <p>Our previous <a href="/resume.html">experience</a> made us be better and better at offering a temporar home to some inocent creatures. Their only mistake was borning in a world where many people are humans without humanity. We're trying to
+                offer everything they need while they're at us. </p>
+
+            <div class="value-props">
+                <div class="prop">
+                    <img src="pic1.jpg" width="60px">
+                    <h2>Unique</h2>
+                    <p>We do our best to match every cat with the best home.</p>
+                </div>
+
+                <div class="prop">
+                    <img src="pic2.jpg" width="60px">
+                    <h2>Experienced</h2>
+                    <p>We've been helping cats for 20 years, we're doing it passion and responsibility.</p>
+                </div>
+
+                <div class="prop">
+                    <img src="pic3.jpg" width="60px">
+                    <h2>Volunteering</h2>
+                    <p>We understand that not everyone can help financially, so in case you want to help by fostering a small soul, we have eveything covered .</p>
+                </div>
+            </div>
+        </div>
+    </main><button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    <script>
+        //Get the button
+        var mybutton = document.getElementById("myBtn");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {
+            scrollFunction()
+        };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+</body>
+
+</html>

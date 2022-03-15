@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="eng">
+
+<head>
+    <title>Adopt</title>
+    <link rel="stylesheet" href="./care.css" />
+    <link rel="stylesheet" href="./navBar.css" />
+</head>
+
+<body>
+    <nav class="navigation">
+        <ul>
+            <li><a href="web.html">Welcome!</a></li>
+            <li><a href="about-info.html">About</a></li>
+            <li><a href="adoption.html">Adopt</a></li>
+            <li><a href="cat-care.html">Care</a></li>
+            <li><a class="active" href="about-cats.html">Cats</a></li>
+        </ul>
+    </nav>
+    <main>
+
+        <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+        <script>
+            //Get the button
+            var mybutton = document.getElementById("myBtn");
+
+            // When the user scrolls down 20px from the top of the document, show the button
+            window.onscroll = function() {
+                scrollFunction()
+            };
+
+            function scrollFunction() {
+                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                    mybutton.style.display = "block";
+                } else {
+                    mybutton.style.display = "none";
+                }
+            }
+
+            // When the user clicks on the button, scroll to the top of the document
+            function topFunction() {
+                document.body.scrollTop = 0;
+                document.documentElement.scrollTop = 0;
+            }
+        </script>
+    </main>
+
+</body>
+
+</html>

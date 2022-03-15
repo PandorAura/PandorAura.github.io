@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="eng">
+
+<head>
+    <title>Adopt</title>
+    <link rel="stylesheet" href="./care.css" />
+    <link rel="stylesheet" href="./navBar.css" />
+</head>
+
+<body>
+    <nav class="navigation">
+        <ul>
+            <li><a href="web.html">Welcome!</a></li>
+            <li><a href="about-info.html">About</a></li>
+            <li><a href="adoption.html">Adopt</a></li>
+            <li><a class="active" href="cat-care.html">Care</a></li>
+            <li><a href="about-cats.html">Cats</a></li>
+        </ul>
+    </nav>
+    <main class="main">
+        <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+        <script>
+            //Get the button
+            var mybutton = document.getElementById("myBtn");
+
+            // When the user scrolls down 20px from the top of the document, show the button
+            window.onscroll = function() {
+                scrollFunction()
+            };
+
+            function scrollFunction() {
+                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                    mybutton.style.display = "block";
+                } else {
+                    mybutton.style.display = "none";
+                }
+            }
+
+            // When the user clicks on the button, scroll to the top of the document
+            function topFunction() {
+                document.body.scrollTop = 0;
+                document.documentElement.scrollTop = 0;
+            }
+        </script>
+
+        <h2 id="cat-care" class="grid">How to care for your cat ?</h2>
+        <div class="container-info">
+            <p>
+                The first day in a new house is strange. The animal may have no appetite or a little loose stool due to nervousness. If this happens, try to talk softly to your cat to calm it down. If the animal is clearly in distress, do not hesitate and go to the vet
+                in consultation with the Green Cats Foundation.
+            </p>
+            <p>
+                When you come home with your new family member, make sure the litter box is ready with a valerian drop in it. Allow the cat to explore the new environment. Some cats find a covered litter box scary. In this case, leave the cover of the box for a while
+                until the animal gets used to it. On the first day place food near the litter box, so it can be easily found by the cat.
+            </p>
+            <p>
+                Make sure you and the cat have time to get used to each other. Always have a scratching post and/or scratching board available so that your furniture is not destroyed. If necessary, you can use a few drops of valerian to encourage the cat to use the scratching
+                post.
+            </p>
+            <p>
+                If you have other pets, make sure they ate before introducing the new housemate. Provide their own food bowls and if possible a separate litter box during the first period. If you give all animals a valerian drop between the shoulder blades, each animal
+                smells the same and they can handle the situation better. If you have a dog, walk the dog while new cat is exploring the house. When a dog comes home from his walk, the newcomer is already there and has found a safe place.
+            </p>
+            <p>
+                Do not let the animal out until it is used to you and the new environment, this can take up to 4-6 weeks. Go out with the animal the first few times and use a cat leash if necessary.
+            </p>
+            <p>
+                A cat also needs exercise, especially indoor cats tend to become overweight. Provide your cats with various toys, don't forget the most beloved toy – laser pointer! Just be careful and do not shine it into your cat eyes.
+            </p>
+        </div>
+        <img id="image" class="grid" src="6 Things Your Cat Probably Loves More Than Food - CatTime.jpg" />
+    </main>
+</body>
+
+</html>
