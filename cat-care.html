@@ -20,29 +20,6 @@
     </nav>
     <main class="main">
         <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
-        <script>
-            //Get the button
-            var mybutton = document.getElementById("myBtn");
-
-            // When the user scrolls down 20px from the top of the document, show the button
-            window.onscroll = function() {
-                scrollFunction()
-            };
-
-            function scrollFunction() {
-                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-                    mybutton.style.display = "block";
-                } else {
-                    mybutton.style.display = "none";
-                }
-            }
-
-            // When the user clicks on the button, scroll to the top of the document
-            function topFunction() {
-                document.body.scrollTop = 0;
-                document.documentElement.scrollTop = 0;
-            }
-        </script>
 
         <h2 id="cat-care" class="grid">How to care for your cat ?</h2>
         <div class="container-info">
@@ -69,7 +46,13 @@
                 A cat also needs exercise, especially indoor cats tend to become overweight. Provide your cats with various toys, don't forget the most beloved toy – laser pointer! Just be careful and do not shine it into your cat eyes.
             </p>
         </div>
-        <img id="image" class="grid" src="6 Things Your Cat Probably Loves More Than Food - CatTime.jpg" />
+        <div class="imageClass">
+            <img src="6 Things Your Cat Probably Loves More Than Food - CatTime.jpg" />
+        </div>
+
+        <script src="BackToTheTopButton.js">
+        </script>
+
         <footer id="about">
             <p>Contact info : axample@gmail.com</p>
         </footer>
